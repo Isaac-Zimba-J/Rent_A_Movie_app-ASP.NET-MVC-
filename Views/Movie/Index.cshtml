@@ -1,0 +1,90 @@
+@model IEnumerable<RAM_APP.Models.Movie>
+
+@{
+    ViewData["Title"] = "All movies";
+}
+
+
+    
+<main id="main" class="main">
+  <h4>Manage movies</h4>
+    <!-- Card with an image on left -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+                    
+
+                      
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Release date
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tax)
+            </th>
+            <th>
+                Genre
+            </th>
+            
+            <th>
+            <a asp-action="Create"  type="button" class="btn btn-sm btn-primary"><i class="bi bi-pencil"></i>new movie</a> 
+            </th>
+              
+             
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr style="font-size:2vh">
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+            <td>
+                ZMW @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tax)%
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GenreNavigation.Name)
+            </td>
+            <td style="table-layout: fixed">
+                <a asp-action="Edit"  type="button" class="btn btn-sm btn-success" asp-route-id="@item.Mid"><i class="bi bi-pen"></i></a>
+            
+                <a asp-action="Details"  type="button" class="btn btn-sm btn-info" asp-route-id="@item.Mid"><i class="bi bi-eye"></i></a> 
+            
+                <a asp-action="Delete"  type="button" class="btn btn-sm btn-danger"asp-route-id="@item.Mid"><i class="bi bi-trash"></i></a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+
+                  </div>
+              </div>
+            </div>
+          </div><!-- End Card with an image on left -->
+
+</main><!-- End #main -->
+

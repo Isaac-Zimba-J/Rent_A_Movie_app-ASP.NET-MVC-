@@ -1,0 +1,212 @@
+@model IEnumerable<RAM_APP.Models.Customer>
+
+@{
+  ViewData["Title"] = "Home Page";
+}
+
+<main id="main" class="main">
+
+    <div class="pagetitle">
+      <h1>Dashboard</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a asp-action="Main">
+              Home
+            </a>
+          </li>
+          <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    
+    <section class="section dashboard">
+      <div class="row">
+
+        <!-- Left side columns -->
+       
+          <div class="row">
+
+            <!-- Sales Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card sales-card">
+                <div class="card-body">
+                  <h5 class="card-title">Movies <span>| As of today</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-cart"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>@ViewBag.AllMovies</h6>
+                     
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Sales Card -->
+
+            <!-- Revenue Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card revenue-card">
+                <div class="card-body">
+                  <h5 class="card-title">Transactions <span>| This Month</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-currency-dollar"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>ZMW @ViewBag.MonthSales</h6>
+                      
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!-- End Revenue Card -->
+
+            <!-- Customers Card -->
+            <div class="col-xxl-4 col-xl-12">
+
+              <div class="card info-card customers-card">
+                <div class="card-body">
+                  <h5 class="card-title">Customers <span>| As of today</span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>@ViewBag.AllCustomers</h6>
+                     
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div><!-- End Customers Card -->
+
+
+            <!-- Recent Sales -->
+            <div class="col-12">
+              <div class="card recent-sales overflow-auto">
+                <div class="card-body">
+                  <h5 class="card-title">Recent Transactions <span>| This Month</span></h5>
+
+                  <table class="table table-borderless datatable">
+                    <thead>
+                      <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Customer</th>
+                        <th scope="col">Movie</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Tax</th>
+                        <th scope="col">Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    @foreach(var transaction in ViewBag.MonthTransactions){
+                      <tr>
+                        <td scope="row">
+                          <a asp-controller="Transaction" asp-action="Details" asp-route-id="@transaction.Tid">
+                            #@transaction.Tid
+                          </a>
+                        </td>
+                        <th scope="row">
+                          @transaction.DateRented
+                        </th>
+                        <td>
+                          @transaction.CustomerNavigation.FirstName
+                          @transaction.CustomerNavigation.Surname
+                        </td>
+                        <td>
+                          <a asp-controller="Movie" asp-action="Details" asp-route-id="@transaction.MovieNavigation.Mid" class="/text-primary">
+                            @transaction.MovieNavigation.Title
+                          </a>
+                        </td>
+                        <td>
+                          ZMW @transaction.MovieNavigation.Price
+                        </td>
+                        <td>
+                          <span >
+                            @transaction.MovieNavigation.Tax%
+                          </span>
+                        </td>
+                        <td>
+                          <span class="badge bg-success">
+                            ZMW @transaction.MovieNavigation.Amount.ToString("N2")
+                          </span>
+                        </td>
+                      </tr>
+                    }
+                     
+                    </tbody>
+                  </table>
+
+                </div>
+
+              </div>
+            </div><!-- End Recent Sales -->
+
+            <!-- Top Selling -->
+            <div class="col-12">
+              <div class="card top-selling overflow-auto">
+                <div class="card-body pb-0">
+                  <h5 class="card-title">Top Selling Movies<span>| As of today</span></h5>
+
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                  
+                        <th scope="col">Movie</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Rented copies</th>
+                        <th scope="col">Revenue</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    @foreach(var movieTransaction in ViewBag.movieCounts){
+                      <tr>
+                       
+                        <td>
+                          <a asp-controller="Movie" asp-action="Details" asp-route-id="@movieTransaction.Movie.Mid" class="text-primary fw-bold">
+                            @movieTransaction.Movie.Title
+                          </a>
+                        </td>
+                        <td>
+                          ZMW @movieTransaction.Movie.Price
+                        </td>
+                        <td class="fw-bold">
+                          @movieTransaction.TransactionCount
+                        </td>
+                        <td>
+                          <span class="badge bg-success">
+                            ZMW @movieTransaction.Revenue
+                          </span>
+                        </td>
+                      </tr>
+                    }
+                      
+                    </tbody>
+                  </table>
+
+                </div>
+
+              </div>
+            </div><!-- End Top Selling -->
+
+          </div>
+       
+
+      </div>
+    </section>
+
+
+
+  </main><!-- End #main -->

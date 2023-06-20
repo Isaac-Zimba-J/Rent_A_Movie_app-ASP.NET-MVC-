@@ -1,0 +1,73 @@
+@model RAM_APP.Models.Movie
+
+@{
+    ViewData["Title"] = "Deleting movie";
+}
+
+<main id="main" class="main">
+<!-- Card with an image on left -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+                    
+
+
+                    <h1>Delete movie from the system</h1>
+
+<h3>Are you sure you want to delete  movie?</h3>
+<div>
+
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+        <dt class = "col-sm-2">
+           Release date
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Rating)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Rating)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class = "col-sm-10">
+            ZMW @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tax)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tax) %
+        </dd>
+        <dt class = "col-sm-2">
+            Genre
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GenreNavigation.Name)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Mid" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a  type="button" class="btn btn-primary" asp-action="Index">Back to list of movies</a>
+    </form>
+</div>
+
+
+                  </div>
+              </div>
+            </div>
+          </div><!-- End Card with an image on left -->
+</main><!-- End #main -->

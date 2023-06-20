@@ -1,0 +1,41 @@
+@model RAM_APP.Models.Starring
+
+@{
+    ViewData["Title"] = "Removing actor from the movie";
+}
+
+
+    
+<main id="main" class="main">
+<!-- Card with an image on left -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+                    
+
+                    
+<h1>Delete</h1>
+<hr/>
+
+<h3>Are you sure you want to remove @Html.DisplayFor(model => model.ActorNavigation.Name) from this movie?</h3>
+<div>
+    
+    <form asp-action="Yes">
+        <input type="hidden" name="id" value="@Model.Sid" />
+        <input type="hidden" name="mid" value="@Model.MovieNavigation.Mid" />
+        <input type="submit" value="Yes" class="btn btn-danger" /> 
+        <a  type="button"  asp-action="AddActor" asp-route-id="@Model.MovieNavigation.Mid" >No</a>
+    </form>
+    
+</div>
+
+                  </div>
+              </div>
+            </div>
+          </div><!-- End Card with an image on left -->
+</main><!-- End #main -->
+
+
+
+

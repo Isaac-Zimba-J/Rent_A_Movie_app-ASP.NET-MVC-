@@ -1,0 +1,64 @@
+@model RAM_APP.Models.Transaction
+
+@{
+    ViewData["Title"] = "Edit transaction";
+}
+
+  
+<main id="main" class="main">
+<!-- Card with an image on left -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+                    
+                    
+<h4>Edit transaction</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Tid" />
+            <div class="form-group">
+                <label asp-for="Customer" class="control-label"></label>
+                <select asp-for="Customer" class="form-control" asp-items="ViewBag.Customer"></select>
+                <span asp-validation-for="Customer" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Movie" class="control-label"></label>
+                <select asp-for="Movie" class="form-control" asp-items="ViewBag.Movie"></select>
+                <span asp-validation-for="Movie" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateRented" class="control-label">Date</label>
+                <input asp-for="DateRented" value="@Model.DateRented" class="form-control" type="datetime-local" />
+                <span asp-validation-for="DateRented" class="text-danger"></span>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+    
+
+
+
+
+                  </div>
+              </div>
+              <a  type="button" class="btn btn-primary" asp-action="Index">Back to List</a>
+            </div>
+          </div><!-- End Card with an image on left -->
+</main><!-- End #main -->
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+

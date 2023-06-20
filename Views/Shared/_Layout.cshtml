@@ -1,0 +1,157 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" href="/images/dfavicon.png">
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - RAM_APP</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/RAM_APP.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/sidebars.css" asp-append-version="true" />
+    <link href="~/css/style.css" rel="stylesheet">
+
+    <link href="~/lib/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/lib/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/lib/quill/quill.snow.css" rel="stylesheet">
+    <link href="~/lib/quill/quill.bubble.css" rel="stylesheet">
+    <link href="~/lib/remixicon/remixicon.css" rel="stylesheet">
+
+</head>
+
+<body>
+  
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a asp-action="Main" asp-controller="Home" class="logo d-flex align-items-center">
+        <img src="logo.png" alt="">
+        <span class="d-none d-lg-block">Rent A Movie</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Search" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+        
+
+        <partial name="_LoginPartial" />
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link " asp-controller="Home" asp-action="Main">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li><!-- End Dashboard Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-menu-button-wide"></i><span>Movie</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a asp-controller="Movie" asp-action="Index"  >
+              <i class="bi bi-circle"></i><span>View Movies</span>
+            </a>
+          </li>
+          <li>
+            <a asp-controller="Movie" asp-action="Create"  >
+              <i class="bi bi-circle"></i><span>New movie</span>
+            </a>
+          </li>
+          <li>
+            <a asp-controller="Actor" asp-action="Index" >
+              <i class="bi bi-circle"></i><span>Actors</span>
+            </a>
+          </li>
+          <li>
+            <a asp-controller="Genre" asp-action="Index" >
+              <i class="bi bi-circle"></i><span>Genres</span>
+            </a>
+          </li>
+          <li>
+             <a asp-controller="Starring" asp-action="Index" >
+              <i class="bi bi-circle"></i><span>Movie stars</span>
+            </a>
+          </li>
+  
+         
+        </ul>
+      </li><!-- End Components Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <i class="bi bi-journal-text"></i><span>Customers</span><i class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li>
+            <a asp-controller="Customer" asp-action="Create">
+              <i class="bi bi-circle"></i><span>New Customer</span>
+            </a>
+          </li>
+          <li>
+            <a asp-controller="Customer" asp-action="Index">
+              <i class="bi bi-circle"></i><span>View existing customers</span>
+            </a>
+          </li>
+          <li>
+            <a asp-controller="Address" asp-action="Index">
+              <i class="bi bi-circle"></i><span>Addresses</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Forms Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav"   asp-controller="Transaction" asp-action="Index">
+          <i class="bi bi-layout-text-window-reverse"></i><span>Transaction List</span><i class=" ms-auto"></i>
+        </a>
+      </li><!-- End Tables Nav -->
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+
+    
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/main.js"></script>
+     <script src="~/lib/quill/quill.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

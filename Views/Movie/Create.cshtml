@@ -1,0 +1,66 @@
+@model RAM_APP.Models.Movie
+
+@{
+    ViewData["Title"] = "Adding new movie";
+}
+
+    
+<main id="main" class="main">
+
+
+<!-- Card with an image on left -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+                    <h2>New movie</h2>
+                    
+
+     
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Genre" class="control-label "></label>
+                <select asp-for="Genre" class ="form-control" asp-items="ViewBag.Genre"></select>
+       
+       
+                <label asp-for="Title" class="control-label "></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+         
+                <label asp-for="ReleaseDate" class="control-label">Release date</label>
+                <input asp-for="ReleaseDate" class="form-control" type="datetime-local" />
+                <span asp-validation-for="ReleaseDate" class="text-danger"></span>
+         
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save and add actors" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+                  </div>
+              </div>
+              <a class="btn btn-primary"asp-action="Index">View list of movies</a>
+            </div>
+              
+            <div>
+  
+</div>
+
+          </div><!-- End Card with an image on left -->
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+</main><!-- End #main -->

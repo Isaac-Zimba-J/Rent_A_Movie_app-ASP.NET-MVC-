@@ -1,0 +1,61 @@
+@model RAM_APP.Models.Starring
+
+@{
+    ViewData["Title"] = "Adding actors to movie";
+    var errorMessage = TempData["ErrorMessage"] as string;
+}
+@if (!string.IsNullOrEmpty(errorMessage))
+{
+    <script>
+        alert("@errorMessage");
+    </script>
+}
+    
+<main id="main" class="main">
+
+
+<!-- Card with an image on left -->
+    <div class="card mb-3">
+        <div class="row g-0">
+            <div class="col-md-12">
+                <div class="card-body">
+                    <h2>Adding actors to movie</h2>
+                    <hr/>
+                    <p>Added actors</p>
+                    <hr/>
+                    <dl>
+                    @foreach(var actor in ViewBag.Stars){
+                       <dt><li> @actor.Name </li></dt>
+                       <dd>
+                            <a asp-action="DeleteFromMovie" asp-route-id="@actor.Sid" asp-route-mid="@actor.Mid">
+                                Remove
+                            </a>
+                        </dd>
+                    }
+                    </dl>
+                    <hr/>
+                    <form asp-action="AddActor">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Actor" class="control-label"></label>
+                <select asp-for="Actor" class ="form-control" asp-items="ViewBag.Actor"></select>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Add actor" class="btn btn-primary" />
+            </div>
+        </form>
+                                 
+                </div>
+                <a class="btn btn-primary" asp-controller="Movie" asp-action="Index">Done adding actors</a>
+            </div>   
+        <div>
+    </div><!-- End Card with an image on left -->
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
+</main><!-- End #main -->

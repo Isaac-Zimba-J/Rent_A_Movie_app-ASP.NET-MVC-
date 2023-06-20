@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\RAM_APP.props" />
+</Project>

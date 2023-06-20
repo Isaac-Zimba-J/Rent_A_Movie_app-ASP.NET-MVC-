@@ -1,0 +1,50 @@
+@model RAM_APP.Models.Genre
+
+@{
+    ViewData["Title"] = "Viewing movies by Genre";
+}
+
+<main id="main" class="main">
+<!-- Card with an image on left -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+
+<h1>@Html.DisplayFor(model => model.Name)</h1>
+
+<div>
+    <hr />
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th> Movie title </th>
+                <th> Rating </th>
+                <th> Price </th>
+                <th> Tax </th>
+                <th> Amount </th>
+            </tr>
+        </thead>
+        <tbody>   
+            @foreach(var item in ViewBag.Movies){
+                <tr>
+                    <td>
+                        <a asp-controller="Movie" asp-action="Details" asp-route-id="@item.Mid">
+                           <b> @item.Title </b>
+                        </a>
+                    </td>
+                    <td>@item.Rating</td>
+                    <td>ZMW @item.Price</td>
+                    <td>@item.Tax%</td>
+                    <td><b>ZMW @item.Amount</b></td>
+                </tr>
+            }
+            
+        </tbody>
+    </table>
+</div>
+            <hr/>
+<div>
+    <a asp-action="Index">Back to List of Genres</a>
+</div>

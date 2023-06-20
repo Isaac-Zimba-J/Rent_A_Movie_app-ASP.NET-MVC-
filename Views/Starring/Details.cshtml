@@ -1,0 +1,54 @@
+@model RAM_APP.Models.Starring
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+    
+<main id="main" class="main">
+<!-- Card with an image on left -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+                    
+
+
+                    
+<h1>Details</h1>
+
+<div>
+    <h4>Starring</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ActorNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ActorNavigation.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MovieNavigation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MovieNavigation.Title)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a  type="button" class="btn btn-danger" asp-action="Edit" asp-route-id="@Model?.Sid">Edit</a> 
+    <a  type="button" class="btn btn-primary" asp-action="Index">Back to List</a>
+</div>
+
+
+                  </div>
+              </div>
+            </div>
+          </div><!-- End Card with an image on left -->
+</main><!-- End #main -->
+
+
+ 
+

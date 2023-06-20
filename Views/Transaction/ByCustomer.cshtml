@@ -1,0 +1,65 @@
+@model IEnumerable<RAM_APP.Models.Transaction>
+
+@{
+    ViewData["Title"] = @ViewBag.CustomerName.FName + "'s transaction";
+}
+
+<main id="main" class="main">
+<!-- Card with an image on left -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+
+<h1>@ViewBag.CustomerName.FName's transactions</h1>
+
+<div>
+    <hr />
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th> TID </th>
+                <th> Date </th>
+                <th> Movie titile </th>
+                <th> Amount </th>
+            </tr>
+        </thead>
+        <tbody>   
+            @foreach(var item in Model){
+                <tr>
+                    <td>
+                        <a asp-controller="Transaction" asp-action="Details" asp-route-id="@item.Tid">
+                            @item.Tid
+                        </a>
+                        
+                    </td>
+                    <td>
+                            @item.DateRented
+                    </td>
+                    <td>
+                        <a asp-controller="Movie" asp-action="Details" asp-route-id="@item.MovieNavigation.Mid">
+                            @item.MovieNavigation.Title
+                        </a>
+                        
+                    </td>
+                    <td>
+                            ZMW @item.MovieNavigation.Amount
+                    </td>
+                </tr>
+            }
+            
+        </tbody>
+        <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td><b>TOTAL AMOUNT   = </b></td>
+                    <td><b>ZMW @ViewBag.CtotalTransactions</b></td>
+                </tr>
+        </tfoot>
+    </table>
+</div><hr/>
+<div>
+    <a asp-action="Index">Back to list of all transactions</a>
+</div>

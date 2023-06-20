@@ -1,0 +1,33 @@
+I have to work on the links to get back to the add actors page after I deleted or cancel delete operation, them work on the homepage
+and finalize everything else
+
+finish adding the view by customer for transactions
+
+
+dotnet-ef dbcontext scaffold 'Name=ConnectionStrings:DBConnection' Microsoft.EntityFrameworkCore.Sqlite -o Models --data-annotations -f
+
+
+
+dotnet aspnet-codegenerator controller -name ActorController -m Actor -dc RentAmovieDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries -sqlite
+
+
+    
+<main id="main" class="main">
+<!-- Card with an image on left -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+                    
+
+
+
+
+                  </div>
+              </div>
+            </div>
+          </div><!-- End Card with an image on left -->
+</main><!-- End #main -->
+
+
+ type="button" class="btn btn-primary"

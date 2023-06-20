@@ -1,0 +1,35 @@
+@model RAM_APP.Models.Actor
+
+@{
+    ViewData["Title"] = "Deleting actor from system";
+}
+
+<main id="main" class="main">
+<!-- Card with an image on left -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+                    
+
+                    
+<h1>Delete actor from system</h1>
+
+<h3>Are you sure you want to delete @Html.DisplayFor(model => model.Name) from the list of actors?</h3>
+<div>    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Aid" />
+        <input type="submit" value="Delete" class="btn btn-sm btn-danger" /> 
+        <a  type="button" class="btn btn-sm btn-primary" asp-action="Index">Cancel</a>
+    </form>
+</div>
+
+
+
+                  </div>
+              </div>
+            </div>
+          </div><!-- End Card with an image on left -->
+</main><!-- End #main -->
+
+

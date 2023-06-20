@@ -1,0 +1,53 @@
+@model IEnumerable<RAM_APP.Models.Actor>
+
+@{
+    ViewData["Title"] = "Movie Actors - RAM_APP";
+}
+
+
+
+
+<main id="main" class="main">
+<!-- Card with an image on left -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+                    <h1>List of actors</h1>
+
+<p>
+    <a asp-action="Create">Add new actor</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                <a type="button" class="btn btn-success mx-4" asp-action="Edit" asp-route-id="@item.Aid">Edit</a> 
+                <a type="button" class="btn btn-primary mx-4"asp-action="Details" asp-route-id="@item.Aid">Details</a> 
+                <a type="button" class="btn btn-danger mx-4" asp-action="Delete" asp-route-id="@item.Aid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+
+
+                  </div>
+              </div>
+            </div>
+          </div><!-- End Card with an image on left -->
+</main><!-- End #main -->

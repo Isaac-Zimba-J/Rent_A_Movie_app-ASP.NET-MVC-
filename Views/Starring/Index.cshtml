@@ -1,0 +1,68 @@
+@model IEnumerable<RAM_APP.Models.Starring>
+
+@{
+    ViewData["Title"] = "Movie stars";
+}
+
+
+    
+<main id="main" class="main">
+<!-- Card with an image on left -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+                    
+                      
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Actor
+            </th>
+            <th>
+                Movie
+            </th>
+            <th></th>
+            <th></th>
+            <th><a asp-action="Create">Create New</a></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ActorNavigation.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MovieNavigation.Title)
+            </td>
+            <td>
+                <a  type="button" class="btn btn-success"asp-action="Edit" asp-route-id="@item.Sid">Edit</a> 
+            </td>
+            <td>
+                <a  type="button" class="btn btn-primary" asp-action="Details" asp-route-id="@item.Sid">Details</a> 
+            </td>
+            <td>
+                <a  type="button" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Sid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+
+                  </div>
+              </div>
+            </div>
+          </div><!-- End Card with an image on left -->
+</main><!-- End #main -->
+
+
+
+
+
+    
+  
+    

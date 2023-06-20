@@ -1,0 +1,61 @@
+@model IEnumerable<RAM_APP.Models.Genre>
+
+@{
+    ViewData["Title"] = "Movie genres";
+}
+
+       
+<main id="main" class="main">
+<!-- Card with an image on left -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+                    
+
+<h4>Movie genres</h4>
+<hr/>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th></th>
+            <th></th>
+            <th><a type="button" class="btn btn-primary" asp-action="Create">New</a></th>
+                
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <a asp-controller="Genre" asp-action="ByGenre" asp-route-id="@item.Gid">
+                    @Html.DisplayFor(modelItem => item.Name)
+                </a>
+            </td>
+            <td>
+                <a  type="button" class="btn btn-sm btn-success " asp-action="Edit" asp-route-id="@item.Gid">Edit</a> 
+            </td>
+            <td>
+                <a type="button" class="btn btn-sm btn-primary" asp-action="Details" asp-route-id="@item.Gid">Details</a> 
+            </td>
+            <td>
+                <a  type="button" class="btn btn-sm btn-danger " asp-action="Delete" asp-route-id="@item.Gid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+                  </div>
+              </div>
+            </div>
+          </div><!-- End Card with an image on left -->
+</main><!-- End #main -->
+ 
+
+
+
+

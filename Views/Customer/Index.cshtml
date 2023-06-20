@@ -1,0 +1,85 @@
+@model IEnumerable<RAM_APP.Models.Customer>
+
+@{
+    ViewData["Title"] = "Customers";
+}
+
+
+
+<main id="main" class="main">
+<!-- Card with an image on left -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+
+                 
+<a  type="button" class="btn btn-sm btn-success" asp-action="Create" >Add new customer</a>
+<h3>Customers</h3> 
+<hr/>                  
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                First name
+            </th>
+            <th>
+                Middle name
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Surname)
+            </th>
+            <th>
+                Phone number
+            </th>
+            <th>
+                Address
+            </th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FirstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MiddleName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Surname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ZipCodeNavigation.Street),
+                @Html.DisplayFor(modelItem => item.ZipCodeNavigation.City),
+                @Html.DisplayFor(modelItem => item.ZipCodeNavigation.State),
+                @Html.DisplayFor(modelItem => item.ZipCodeNavigation.Zipcode).
+            </td>
+            <td>
+                <a  type="button" class="btn btn-sm btn-success" asp-action="Edit" asp-route-id="@item.Cid">Edit</a> 
+            </td>
+            <td>
+                <a  type="button" class="btn btn-sm btn-primary" asp-action="Details" asp-route-id="@item.Cid">Details</a> 
+            </td>
+            <td>
+                <a  type="button" class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.Cid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+                  </div>
+              </div>
+            </div>
+          </div><!-- End Card with an image on left -->
+</main><!-- End #main -->
+
+
+

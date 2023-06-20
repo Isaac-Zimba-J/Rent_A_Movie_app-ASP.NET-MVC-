@@ -1,0 +1,81 @@
+@model IEnumerable<RAM_APP.Models.Transaction>
+
+@{
+    ViewData["Title"] = "Transactions";
+}
+
+
+<main id="main" class="main">
+<h1>All transactions</h1>
+
+
+<!-- Card with an image on left -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+                    
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Date
+            </th>
+            <th>
+                Customer
+            </th>
+            <th>
+                Movie
+            </th>
+            <th>
+                Amount
+            </th>
+            <th></th>
+            <th></th>
+            <th>
+             <a asp-action="Create"  type="button" class="btn btn-primary">Create New</a> 
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateRented)
+            </td>
+            <td>
+                <a asp-action="ByCustomer" asp-route-id="@item.CustomerNavigation.Cid">
+                    @Html.DisplayFor(modelItem => item.CustomerNavigation.FirstName)
+                    @Html.DisplayFor(modelItem => item.CustomerNavigation.MiddleName)
+                    @Html.DisplayFor(modelItem => item.CustomerNavigation.Surname)
+                </a>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MovieNavigation.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MovieNavigation.Amount)
+            </td>
+            <td>
+                <a asp-action="Edit"  type="button" class="btn btn-sm btn-success mx-05" asp-route-id="@item.Tid">Edit</a> 
+            </td>
+            <td>
+                 <a asp-action="Details" type="button" class="btn btn-sm btn-info mx-05" asp-route-id="@item.Tid">Details</a> 
+            </td>
+            <td>
+                <a asp-action="Delete"  type="button" class="btn btn-sm btn-danger mx-05" asp-route-id="@item.Tid">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+
+
+                  </div>
+              </div>
+            </div>
+          </div><!-- End Card with an image on left -->
+
+</main><!-- End #main -->

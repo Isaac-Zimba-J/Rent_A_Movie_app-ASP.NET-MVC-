@@ -1,0 +1,58 @@
+@model RAM_APP.Models.Customer
+
+@{
+    ViewData["Title"] = "Customer details";
+}
+
+
+   
+<main id="main" class="main">
+<!-- Card with an image on left -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+                    
+<div>
+    <h4>Customer details</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Name: 
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FirstName)
+            @Html.DisplayFor(model => model.MiddleName)
+            @Html.DisplayFor(model => model.Surname)
+        </dd>
+        <dt class = "col-sm-2">
+            Phone number: 
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+        <dt class = "col-sm-2">
+            Adress: 
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ZipCodeNavigation.Street),
+            @Html.DisplayFor(model => model.ZipCodeNavigation.City),
+            @Html.DisplayFor(model => model.ZipCodeNavigation.State),
+            @Html.DisplayFor(model => model.ZipCodeNavigation.Zipcode).
+        </dd>
+    </dl>
+</div>
+<div>
+    <a type="button" class="btn btn-primary" asp-action="Edit" asp-route-id="@Model?.Cid">Edit</a> 
+    <a  type="button" class="btn btn-danger"asp-action="Index">Back to List</a>
+</div>
+
+
+                  </div>
+              </div>
+            </div>
+          </div><!-- End Card with an image on left -->
+</main><!-- End #main -->
+
+
+

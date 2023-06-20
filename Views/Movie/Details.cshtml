@@ -1,0 +1,76 @@
+@model RAM_APP.Models.Movie
+
+@{
+    ViewData["Title"] = @Html.DisplayFor(model => model.Title);
+}
+
+
+<main id="main" class="main">
+<!-- Card with an image on left -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-md-12">
+                <div class="card-body">
+                    
+
+                    <h1>@Html.DisplayFor(model => model.Title) - movie details</h1>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Release date:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ReleaseDate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Rating):
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Rating)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Price):
+        </dt>
+        <dd class = "col-sm-10">
+            ZMW @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tax):
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tax)%
+        </dd>
+        <dt class = "col-sm-2">
+            Genre:
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GenreNavigation.Name)
+        </dd>
+        <dt class = "col-sm-2">
+            Actors: 
+        </dt>
+        <dd class = "col-sm-10">
+            @foreach (var star in ViewBag.Stars) {
+                <li> @star <br/></li>
+            }
+        </dd>
+        <hr/>
+        <p>The total amount payable for this movie is <b>ZMW @Html.DisplayFor(model => model.Amount)</b> after tax.</p>
+    </dl>
+        <hr/>
+
+          <a type="button" class="btn btn-sm btn-success" asp-action="Edit" asp-route-id="@Model?.Mid">Edit</a> |
+          <a  type="button" class="btn btn-sm btn-primary" asp-action="Index">Back to List</a>
+        
+ 
+</div>
+
+
+<div>
+    
+                  </div>
+              </div>
+            </div>
+          </div><!-- End Card with an image on left -->
+</main><!-- End #main -->
+
