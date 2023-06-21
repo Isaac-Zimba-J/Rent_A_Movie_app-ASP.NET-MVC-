@@ -1,5 +1,6 @@
 
 body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   padding-top: 70px; /* Add padding to the top of the body to accommodate the navbar */
   background-image: url(~/images/background-image.jpg); /* Specify the path to your background image */
   background-size: cover; /* Scale the background image to cover the entire body */

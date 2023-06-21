@@ -111,7 +111,7 @@ namespace RAM_APP.Controllers
                 //Get the date and time in a datetime format then convert to string before storing in the database
                 //Do the same even when editing the records... in the Edit's post action.
                 DateTime dateRented = DateTime.Parse(transaction.DateRented);
-                transaction.DateRented = dateRented.ToString("yyyy-MM-dd, HH:MM");
+                transaction.DateRented = dateRented.ToString("yyyy-MM-dd");
                 _context.Add(transaction);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -131,7 +131,7 @@ namespace RAM_APP.Controllers
 
             var transaction = await _context.Transactions.FindAsync(id);
             DateTime dateRented = DateTime.Parse(transaction.DateRented);
-                    transaction.DateRented = dateRented.ToString("dd MMM yyyy HH:MM");
+                    transaction.DateRented = dateRented.ToString("yyyy-MM-dd");
             if (transaction == null)
             {
                 return NotFound();
