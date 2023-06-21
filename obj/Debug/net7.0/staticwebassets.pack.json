@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\covers\\terminator.jpg"
     },
     {
+      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
       "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -35,6 +39,22 @@
     {
       "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\icons8-film-projector-32.png",
       "PackagePath": "staticwebassets\\icons8-film-projector-32.png"
+    },
+    {
+      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\images\\Deadpool.jpeg",
+      "PackagePath": "staticwebassets\\images\\Deadpool.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\images\\John wick.jpeg",
+      "PackagePath": "staticwebassets\\images\\John wick.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\images\\avater.jpeg",
+      "PackagePath": "staticwebassets\\images\\avater.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\images\\background.mp4",
+      "PackagePath": "staticwebassets\\images\\background.mp4"
     },
     {
       "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\images\\dfavicon.png",
