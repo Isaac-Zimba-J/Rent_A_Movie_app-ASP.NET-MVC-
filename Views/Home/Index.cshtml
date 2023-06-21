@@ -1,15 +1,11 @@
 ﻿@{
-    Layout = null;
+    Layout = "~/Views/Shared/_IndexLayout.cshtml";
     ViewData["Title"] = "Rent A Movie Store - Home Page";
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Movie App</title>
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
   <link rel="stylesheet" href="~/css/index.css">
+
 
 
 
@@ -26,22 +22,6 @@
 </video>
 
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand ml-3" href="#">Rent A Movie App</a>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="Identity/Account/Login">Login</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
 
 <div class="container mt-5">
     <h2 class="text-light"> Latest movies</h2>
@@ -76,12 +56,3 @@
     </div>
 </div>
 
-
-<script src="~/lib/jquery/dist/jquery.min.js"></script>
-<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="~/js/site.js" asp-append-version="true"></script>
-<script src="~/js/main.js"></script>
-<script src="~/lib/quill/quill.min.js"></script>
-
-</body>
-</html>

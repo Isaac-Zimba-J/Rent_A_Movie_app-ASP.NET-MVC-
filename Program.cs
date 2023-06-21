@@ -21,7 +21,11 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<RentAmovieDbContext>(options => 
                                 options.UseSqlite("DataSource=RentAMovieDB.db"));
 
+// builder.Services.ConfigureApplicationCookie(o =>
+// {
 
+//     o.ReturnUrlParameter = "Home/Main";
+// });
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
