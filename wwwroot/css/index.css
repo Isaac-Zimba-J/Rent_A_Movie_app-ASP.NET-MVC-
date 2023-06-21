@@ -1,32 +1,48 @@
+
 body {
-    padding-top: 70px; /* Add padding to the top of the body to accommodate the navbar */
-    background-image: url(~/images/background-image.jpg); /* Specify the path to your background image */
-    background-size: cover; /* Scale the background image to cover the entire body */
-    background-repeat: no-repeat;
-    overflow: hidden;
-  }
-  .background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-  }
-  .custom-padding {
-    padding: 10px; /* Add 5 pixels of padding to the left and right of the cards */
-  }
-  .card {
-    position: relative; /* Ensure the card is positioned relative to its container */
-    overflow: hidden; /* Hide any overflowing content within the card */
-  }
-  .card-image {
-    width: 100%; /* Set the fixed width of the image */
-    height: 470px; /* Set the height of the image to 100% */
-    object-fit: cover; /* Maintain the aspect ratio and cover the entire container */
-    transition: transform 0.3s ease; /* Add a smooth transition to the transform property */
-  }
-  .card:hover .card-image {
-    transform: scale(1.05); /* Scale up the image on hover */
-  }
+  padding-top: 70px; /* Add padding to the top of the body to accommodate the navbar */
+  background-image: url(~/images/background-image.jpg); /* Specify the path to your background image */
+  background-size: cover; /* Scale the background image to cover the entire body */
+  background-repeat: no-repeat;
+  overflow-x: hidden; /* Hide horizontal overflow */
+  margin: 0;
+}
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.custom-padding {
+  padding: 10px; /* Add 5 pixels of padding to the left and right of the cards */
+}
+.card {
+  position: relative; /* Ensure the card is positioned relative to its container */
+  overflow: hidden; /* Hide any overflowing content within the card */
+  background-color: transparent;
+  border: solid;
+  border-color: gray;
+}
+.card-image {
+  width: 100%; /* Set the width of the image to 100% */
+  height: 470px; /* Set the height of the image */
+  object-fit: cover; /* Maintain the aspect ratio and cover the entire container */
+  transition: transform 0.3s ease; /* Add a smooth transition to the transform property */
+}
+.card:hover .card-image {
+  transform: scale(1.05); /* Scale up the image on hover */
+}
+
+/* Additional Styles */
+.container {
+  max-width: 1200px; /* Set a maximum width for the container */
+}
+.mt-5 {
+  margin-top: 3rem; /* Adjust the top margin to provide spacing */
+}
+.text-light {
+  color: #fff; /* Set the text color to light */
+}
