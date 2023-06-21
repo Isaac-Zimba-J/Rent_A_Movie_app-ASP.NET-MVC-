@@ -11,6 +11,8 @@ dotnet-ef dbcontext scaffold 'Name=ConnectionStrings:DBConnection' Microsoft.Ent
 dotnet aspnet-codegenerator controller -name ActorController -m Actor -dc RentAmovieDbContext --relativeFolderPath Controllers --useDefaultLayout --referenceScriptLibraries -sqlite
 
 
+dotnet aspnet-codegenerator  identity -dc WebApplication1.Data.ApplicationDbContext
+
     
 <main id="main" class="main">
 <!-- Card with an image on left -->

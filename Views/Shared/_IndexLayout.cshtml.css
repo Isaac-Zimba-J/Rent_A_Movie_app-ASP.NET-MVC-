@@ -6,6 +6,9 @@ a.navbar-brand {
     text-align: center;
     word-break: break-all;
   }
+  .header{
+    background-color: rgba(0, 0, 0, 0.705);
+  }
   
   a {
     color: #0077cc;

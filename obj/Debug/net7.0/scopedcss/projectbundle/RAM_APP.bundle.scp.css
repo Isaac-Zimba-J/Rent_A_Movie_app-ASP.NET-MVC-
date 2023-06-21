@@ -7,6 +7,9 @@ a.navbar-brand[b-38bbx9fzjv] {
     text-align: center;
     word-break: break-all;
   }
+  .header[b-38bbx9fzjv]{
+    background-color: rgba(0, 0, 0, 0.705);
+  }
   
   a[b-38bbx9fzjv] {
     color: #0077cc;
