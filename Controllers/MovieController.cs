@@ -63,6 +63,28 @@ namespace RAM_APP.Controllers
             return View(movie);
         }
 
+
+        public async Task<IActionResult> Search(string id)
+        {
+            if(id == null|| _context.Movies == null){
+                return RedirectToAction("Index", "Movie");
+            }
+            else{
+            string searchTermLower = id.ToLower();
+            //Sort the movies in decending order of their release date, then the genre and lastly the title
+            var rentAmovieDbContext = _context.Movies
+            .OrderByDescending(m => m.ReleaseDate)
+            .ThenBy(m => m.Genre)
+            .ThenBy(m => m.Title)
+            .Include(m => m.GenreNavigation)
+            .Where(m => m.Title.ToLower().Contains(searchTermLower) || 
+                        m.GenreNavigation.Name.ToLower().Contains(searchTermLower))
+            .ToListAsync();
+            return View(await rentAmovieDbContext);
+            }
+
+        }
+
         
 
         // GET: Movie/Create
@@ -105,11 +127,12 @@ namespace RAM_APP.Controllers
                 return NotFound();
             }
 
-            var movie = await _context.Movies.FindAsync(id);
+            var movie = await _context.Movies.FindAsync(id);           
             if (movie == null)
             {
                 return NotFound();
             }
+            
             ViewData["Genre"] = new SelectList(_context.Genres, "Gid", "Name", movie.Genre);
             return View(movie);
         }
