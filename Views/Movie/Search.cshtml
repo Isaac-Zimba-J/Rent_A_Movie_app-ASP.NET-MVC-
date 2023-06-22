@@ -9,16 +9,12 @@
 <main id="main" class="main">
     <h4>Manage movies</h4>
 
-    
-    <!--search button -->
     <div class="input-group mt-3">
     <input id="searchbar"  type="search" class="form-control" placeholder="Search for movie by title or genre">
     <div class="input-group-append">
         <a id="searchButton" onclick="search_movies()" class="btn btn-sm btn-primary"><i class="bi bi-search"></i>Search</a>
     </div>
     </div>
-    <!-- end search button -->
-
 
     <!-- Card with an image on left -->
     <div class="card mb-3">
@@ -77,12 +73,22 @@
 </main><!-- End #main -->
 
 
+<!-- function to call the search action when the button has been clicked. -->
 <script>
 
     function search_movies() {
         var searchTerm = document.getElementById('searchbar').value;			
-        var url = "Movie/Search/" + searchTerm;
+        var url =  searchTerm;
         window.location.href = url;
     }
 
 </script>
+
+
+
+
+
+
+
+
+
