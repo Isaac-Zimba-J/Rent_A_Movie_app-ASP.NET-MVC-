@@ -1,419 +1,419 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\RAM_APP.bundle.scp.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\RAM_APP.bundle.scp.css",
       "PackagePath": "staticwebassets\\RAM_APP.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\covers\\download.jpg",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\covers\\download.jpg",
       "PackagePath": "staticwebassets\\covers\\download.jpg"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\covers\\guardians.jpg",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\covers\\guardians.jpg",
       "PackagePath": "staticwebassets\\covers\\guardians.jpg"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\covers\\johnWick4.jpg",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\covers\\johnWick4.jpg",
       "PackagePath": "staticwebassets\\covers\\johnWick4.jpg"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\covers\\moanaArt.jpg",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\covers\\moanaArt.jpg",
       "PackagePath": "staticwebassets\\covers\\moanaArt.jpg"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\covers\\terminator.jpg",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\covers\\terminator.jpg",
       "PackagePath": "staticwebassets\\covers\\terminator.jpg"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\css\\index.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\css\\index.css",
       "PackagePath": "staticwebassets\\css\\index.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\css\\style.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\css\\style.css",
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\icons8-film-projector-32.png",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\icons8-film-projector-32.png",
       "PackagePath": "staticwebassets\\icons8-film-projector-32.png"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\images\\Deadpool.jpeg",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\images\\Deadpool.jpeg",
       "PackagePath": "staticwebassets\\images\\Deadpool.jpeg"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\images\\John wick.jpeg",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\images\\John wick.jpeg",
       "PackagePath": "staticwebassets\\images\\John wick.jpeg"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\images\\avater.jpeg",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\images\\avater.jpeg",
       "PackagePath": "staticwebassets\\images\\avater.jpeg"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\images\\background.mp4",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\images\\background.mp4",
       "PackagePath": "staticwebassets\\images\\background.mp4"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\images\\dfavicon.png",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\images\\dfavicon.png",
       "PackagePath": "staticwebassets\\images\\dfavicon.png"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\images\\dfaviconione.ico",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\images\\dfaviconione.ico",
       "PackagePath": "staticwebassets\\images\\dfaviconione.ico"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\js\\main.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\js\\main.js",
       "PackagePath": "staticwebassets\\js\\main.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.json",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.json",
       "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.json"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.scss",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap-icons\\bootstrap-icons.scss",
       "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\bootstrap-icons.scss"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff",
       "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2",
       "PackagePath": "staticwebassets\\lib\\bootstrap-icons\\fonts\\bootstrap-icons.woff2"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\boxicons\\css\\animations.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\boxicons\\css\\animations.css",
       "PackagePath": "staticwebassets\\lib\\boxicons\\css\\animations.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\boxicons\\css\\boxicons.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\boxicons\\css\\boxicons.css",
       "PackagePath": "staticwebassets\\lib\\boxicons\\css\\boxicons.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\boxicons\\css\\boxicons.min.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\boxicons\\css\\boxicons.min.css",
       "PackagePath": "staticwebassets\\lib\\boxicons\\css\\boxicons.min.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\boxicons\\css\\transformations.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\boxicons\\css\\transformations.css",
       "PackagePath": "staticwebassets\\lib\\boxicons\\css\\transformations.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\boxicons\\fonts\\boxicons.eot",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\boxicons\\fonts\\boxicons.eot",
       "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.eot"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\boxicons\\fonts\\boxicons.svg",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\boxicons\\fonts\\boxicons.svg",
       "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.svg"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\boxicons\\fonts\\boxicons.ttf",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\boxicons\\fonts\\boxicons.ttf",
       "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.ttf"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff",
       "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.woff"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff2",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\boxicons\\fonts\\boxicons.woff2",
       "PackagePath": "staticwebassets\\lib\\boxicons\\fonts\\boxicons.woff2"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\quill\\quill.bubble.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\quill\\quill.bubble.css",
       "PackagePath": "staticwebassets\\lib\\quill\\quill.bubble.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\quill\\quill.core.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\quill\\quill.core.css",
       "PackagePath": "staticwebassets\\lib\\quill\\quill.core.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\quill\\quill.core.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\quill\\quill.core.js",
       "PackagePath": "staticwebassets\\lib\\quill\\quill.core.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\quill\\quill.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\quill\\quill.js",
       "PackagePath": "staticwebassets\\lib\\quill\\quill.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\quill\\quill.min.js",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\quill\\quill.min.js",
       "PackagePath": "staticwebassets\\lib\\quill\\quill.min.js"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\quill\\quill.min.js.map",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\quill\\quill.min.js.map",
       "PackagePath": "staticwebassets\\lib\\quill\\quill.min.js.map"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\quill\\quill.snow.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\quill\\quill.snow.css",
       "PackagePath": "staticwebassets\\lib\\quill\\quill.snow.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\remixicon\\remixicon.css",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\remixicon\\remixicon.css",
       "PackagePath": "staticwebassets\\lib\\remixicon\\remixicon.css"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\remixicon\\remixicon.eot",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\remixicon\\remixicon.eot",
       "PackagePath": "staticwebassets\\lib\\remixicon\\remixicon.eot"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\remixicon\\remixicon.less",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\remixicon\\remixicon.less",
       "PackagePath": "staticwebassets\\lib\\remixicon\\remixicon.less"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\remixicon\\remixicon.svg",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\remixicon\\remixicon.svg",
       "PackagePath": "staticwebassets\\lib\\remixicon\\remixicon.svg"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\remixicon\\remixicon.symbol.svg",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\remixicon\\remixicon.symbol.svg",
       "PackagePath": "staticwebassets\\lib\\remixicon\\remixicon.symbol.svg"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\remixicon\\remixicon.ttf",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\remixicon\\remixicon.ttf",
       "PackagePath": "staticwebassets\\lib\\remixicon\\remixicon.ttf"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\remixicon\\remixicon.woff",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\remixicon\\remixicon.woff",
       "PackagePath": "staticwebassets\\lib\\remixicon\\remixicon.woff"
     },
     {
-      "Id": "C:\\Users\\Zac\\Desktop\\RAM_APP - Copy (2)\\wwwroot\\lib\\remixicon\\remixicon.woff2",
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\remixicon\\remixicon.woff2",
       "PackagePath": "staticwebassets\\lib\\remixicon\\remixicon.woff2"
     },
     {

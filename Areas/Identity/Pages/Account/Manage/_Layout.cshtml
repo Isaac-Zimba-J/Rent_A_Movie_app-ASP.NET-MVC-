@@ -9,20 +9,54 @@
     }
 }
 
-<h1>Manage your account</h1>
+
+<style>
+body{
+    background-color:rgba(0,0,0,0.82);
+}
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+h6,h3,p,h4,h1,h2,a, .checkbox {
+    color:white;
+}
+h3{
+    padding-left:3%;
+}
+
+</style>
+
+<!--video--->
+
+
+<center >
+<div class="col py-5">
+<div class="py-5">
+<h1 style="color:white">Manage your account</h1>
 
 <div>
-    <h2>Change your account settings</h2>
+
     <hr />
     <div class="row">
         <div class="col-md-3">
             <partial name="_ManageNav" />
         </div>
         <div class="col-md-9">
+            
             @RenderBody()
+            
         </div>
     </div>
 </div>
+</div>
+</div>
+</center>
 
 @section Scripts {
     @RenderSection("Scripts", required: false)

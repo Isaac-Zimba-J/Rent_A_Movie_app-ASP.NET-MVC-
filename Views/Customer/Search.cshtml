@@ -7,16 +7,6 @@
 
 
 <main id="main" class="main">
-
-<!--search button -->
-    <div class="input-group mt-3">
-    <input id="searchbar"  type="search" class="form-control" placeholder="Search for customer by name or phone number">
-    <div class="input-group-append">
-        <a id="searchButton" onclick="search_customers()" class="btn btn-sm btn-primary"><i class="bi bi-search"></i>Search</a>
-    </div>
-    </div>
-    <!-- end search button -->
-
 <!-- Card with an image on left -->
           <div class="card mb-3">
             <div class="row g-0">
@@ -92,13 +82,4 @@
 </main><!-- End #main -->
 
 
-<script>
-
-    function search_customers() {
-        var searchTerm = document.getElementById('searchbar').value;			
-        var url = "Customer/Search/" + searchTerm;
-        window.location.href = url;
-    }
-
-</script>
 

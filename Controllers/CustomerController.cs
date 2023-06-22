@@ -27,6 +27,27 @@ namespace RAM_APP.Controllers
             return View(await rentAmovieDbContext.ToListAsync());
         }
 
+        public async Task<IActionResult> Search(string id)
+        {
+            if(id == null|| _context.Movies == null){
+                return RedirectToAction("Index", "Movie");
+            }
+            else{
+            string searchTermLower = id.ToLower();
+            //Sort the movies in decending order of their release date, then the genre and lastly the title
+            var rentAmovieDbContext = _context.Customers
+            .Include(c => c.ZipCodeNavigation)
+            .Where(c => c.FirstName.ToLower().Contains(searchTermLower) || 
+                        c.Surname.ToLower().Contains(searchTermLower) ||
+                        c.MiddleName.ToLower().Contains(searchTermLower) ||
+                        c.PhoneNumber.ToLower().Contains(searchTermLower)
+                        )
+            .ToListAsync();
+            return View(await rentAmovieDbContext);
+            }
+
+        }
+
      
         // GET: Customer/Details/5
         public async Task<IActionResult> Details(long? id)

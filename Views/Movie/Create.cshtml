@@ -32,7 +32,7 @@
                 <span asp-validation-for="Title" class="text-danger"></span>
          
                 <label asp-for="ReleaseDate" class="control-label">Release date</label>
-                <input asp-for="ReleaseDate" class="form-control" type="datetime-local" />
+                <input asp-for="ReleaseDate" class="form-control" asp-format="{0:yyyy-MM-dd}" class="form-control" type="date" />
                 <span asp-validation-for="ReleaseDate" class="text-danger"></span>
          
                 <label asp-for="Price" class="control-label"></label>

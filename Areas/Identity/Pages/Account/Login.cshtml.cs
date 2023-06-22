@@ -104,6 +104,16 @@ namespace RAM_APP.Areas.Identity.Pages.Account
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
             returnUrl ??= Url.Content("~/");
+            string newReturnUrl = "";
+            //compare the url you just collected and check if it is the Index or same level as the Index
+            //then set it to a new url that will lead to the dashboard 
+            //else just go back to the same url e.g if you tried to access movies then login, you'll be sent back to the movies now
+            if(newReturnUrl == Url.Content("~/Home")){
+                newReturnUrl = "/Home/Main";
+            }else{
+                newReturnUrl = "/Home/Main";
+            }
+
 
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
@@ -115,7 +125,7 @@ namespace RAM_APP.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
-                    return LocalRedirect(returnUrl);
+                    return LocalRedirect(newReturnUrl);
                 }
                 if (result.RequiresTwoFactor)
                 {
