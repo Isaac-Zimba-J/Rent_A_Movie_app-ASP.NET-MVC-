@@ -31,7 +31,8 @@ namespace RAM_APP.Controllers
         //GET: Movie/AddActor
         public async Task<IActionResult> AddActor(long? id)
         {
-            ViewData["Actor"] = new SelectList(_context.Actors, "Aid", "Name");
+            var Actors = _context.Actors.OrderBy(a => a.Name);
+            ViewData["Actor"] = new SelectList(Actors, "Aid", "Name");
 
             //Get the starring table, actor and movie tables join them to be able to associate the
             //actors with the movie in which they're starring
@@ -39,6 +40,7 @@ namespace RAM_APP.Controllers
                             join a in _context.Actors on s.Actor equals a.Aid
                             join m in _context.Movies on s.Movie equals m.Mid
                             where s.Movie == id
+                            orderby a.Name ascending
                             select new{a.Name, s.Sid, m.Mid, m.Title};
             var stars = await actors.ToListAsync();
 
@@ -106,8 +108,8 @@ namespace RAM_APP.Controllers
             var stars = await actors.ToListAsync();
             //create a viewBag for the joined tables to be able to display them in the view
             ViewBag.Stars = stars;
-
-            ViewData["Actor"] = new SelectList(_context.Actors, "Aid", "Name", starring.Actor);
+            var Actors = _context.Actors.OrderBy(a => a.Name);
+            ViewData["Actor"] = new SelectList(Actors, "Aid", "Name", starring.Actor);
             return View(starring);
         }
 
@@ -143,8 +145,10 @@ namespace RAM_APP.Controllers
         // GET: Starring/Create
         public IActionResult Create()
         {
-            ViewData["Actor"] = new SelectList(_context.Actors, "Aid", "Name");
-            ViewData["Movie"] = new SelectList(_context.Movies, "Mid", "Title");
+            var Actors = _context.Actors.OrderBy(a => a.Name);
+            var Movies = _context.Movies.OrderBy(m => m.Title);
+            ViewData["Actor"] = new SelectList(Actors, "Aid", "Name");
+            ViewData["Movie"] = new SelectList(Movies, "Mid", "Title");
             return View();
         }
 
@@ -161,8 +165,10 @@ namespace RAM_APP.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["Actor"] = new SelectList(_context.Actors, "Aid", "Name", starring.Actor);
-            ViewData["Movie"] = new SelectList(_context.Movies, "Mid", "Title", starring.Movie);
+            var Actors = _context.Actors.OrderBy(a => a.Name);
+            var Movies = _context.Movies.OrderBy(m => m.Title);
+            ViewData["Actor"] = new SelectList(Actors, "Aid", "Name", starring.Actor);
+            ViewData["Movie"] = new SelectList(Movies, "Mid", "Title", starring.Movie);
             return View(starring);
         }
 
@@ -179,8 +185,10 @@ namespace RAM_APP.Controllers
             {
                 return NotFound();
             }
-            ViewData["Actor"] = new SelectList(_context.Actors, "Aid", "Name", starring.Actor);
-            ViewData["Movie"] = new SelectList(_context.Movies, "Mid", "Title", starring.Movie);
+            var Actors = _context.Actors.OrderBy(a => a.Name);
+            var Movies = _context.Movies.OrderBy(m => m.Title);
+            ViewData["Actor"] = new SelectList(Actors, "Aid", "Name", starring.Actor);
+            ViewData["Movie"] = new SelectList(Movies, "Mid", "Title", starring.Movie);
             return View(starring);
         }
 
@@ -216,8 +224,10 @@ namespace RAM_APP.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["Actor"] = new SelectList(_context.Actors, "Aid", "Name", starring.Actor);
-            ViewData["Movie"] = new SelectList(_context.Movies, "Mid", "Title", starring.Movie);
+            var Actors = _context.Actors.OrderBy(a => a.Name);
+            var Movies = _context.Movies.OrderBy(m => m.Title);
+            ViewData["Actor"] = new SelectList(Actors, "Aid", "Name", starring.Actor);
+            ViewData["Movie"] = new SelectList(Movies, "Mid", "Title", starring.Movie);
             return View(starring);
         }
 

@@ -92,13 +92,22 @@ namespace RAM_APP.Areas.Identity.Pages.Account
             }
 
             returnUrl ??= Url.Content("~/");
+            string newReturnUrl = "";
+            //compare the url you just collected and check if it is the Index or same level as the Index
+            //then set it to a new url that will lead to the dashboard 
+            //else just go back to the same url e.g if you tried to access movies then login, you'll be sent back to the movies now
+            if(returnUrl == Url.Content("~/Home") || returnUrl == Url.Content("~/") || returnUrl == Url.Content("~/Home/Index")){
+                newReturnUrl = Url.Content("~/Home/Main");
+            }else{
+                newReturnUrl = returnUrl;
+            }
 
             // Clear the existing external cookie to ensure a clean login process
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
 
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
-            ReturnUrl = returnUrl;
+            ReturnUrl = newReturnUrl;
         }
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
@@ -108,10 +117,10 @@ namespace RAM_APP.Areas.Identity.Pages.Account
             //compare the url you just collected and check if it is the Index or same level as the Index
             //then set it to a new url that will lead to the dashboard 
             //else just go back to the same url e.g if you tried to access movies then login, you'll be sent back to the movies now
-            if(newReturnUrl == Url.Content("~/Home")){
-                newReturnUrl = "/Home/Main";
+            if(returnUrl == Url.Content("~/Home") || returnUrl == Url.Content("~/") || returnUrl == Url.Content("~/Home/Index")){
+                newReturnUrl = Url.Content("~/Home/Main");
             }else{
-                newReturnUrl = "/Home/Main";
+                newReturnUrl = returnUrl;
             }
 
 
