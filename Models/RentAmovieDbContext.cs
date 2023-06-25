@@ -47,7 +47,7 @@ public partial class RentAmovieDbContext : DbContext
 
         modelBuilder.Entity<Transaction>(entity =>
         {
-            entity.HasOne(t => t.CustomerNavigation).WithMany(j => j.Transactions);
+            entity.HasOne(t => t.CustomerNavigation).WithMany(j => j.Transactions).OnDelete(DeleteBehavior.Cascade);
 
             entity.HasOne(t => t.MovieNavigation).WithMany(j => j.Transactions).OnDelete(DeleteBehavior.Cascade); 
         }

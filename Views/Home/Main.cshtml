@@ -92,11 +92,63 @@
             </div><!-- End Customers Card -->
 
 
+            <!-- Top Selling -->
+            <div class="col-12">
+              <div class="card top-selling overflow-auto">
+                <div class="card-body pb-0">
+                  <h5 class="card-title">Top 5 Selling Movies<span>| As of today</span></h5>
+
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">S/N</th> 
+                        <th scope="col">Movie</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Rented copies</th>
+                        <th scope="col">Revenue</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                    @{long position = 1;}
+                    @foreach(var movieTransaction in ViewBag.movieCounts){
+                      <tr>
+                        
+                        <td>@position</td>
+                        @{position++;}
+                       
+                        <td>
+                          <a asp-controller="Movie" asp-action="Details" asp-route-id="@movieTransaction.Movie.Mid" class="text-primary fw-bold">
+                            @movieTransaction.Movie.Title
+                          </a>
+                        </td>
+                        <td>
+                          ZMW @movieTransaction.Movie.Price
+                        </td>
+                        <td class="fw-bold">
+                          @movieTransaction.TransactionCount
+                        </td>
+                        <td>
+                          <span class="badge bg-success">
+                            ZMW @movieTransaction.Revenue
+                          </span>
+                        </td>
+                      </tr>
+                    }
+                      
+                    </tbody>
+                  </table>
+
+                </div>
+
+              </div>
+            </div><!-- End Top Selling -->
+
+
             <!-- Recent Sales -->
             <div class="col-12">
               <div class="card recent-sales overflow-auto">
                 <div class="card-body">
-                  <h5 class="card-title">Recent Transactions <span>| This Month</span></h5>
+                  <h5 class="card-title">15 Recent Transactions <span>| This Month</span></h5>
 
                   <table class="table table-borderless datatable">
                     <thead>
@@ -153,53 +205,6 @@
 
               </div>
             </div><!-- End Recent Sales -->
-
-            <!-- Top Selling -->
-            <div class="col-12">
-              <div class="card top-selling overflow-auto">
-                <div class="card-body pb-0">
-                  <h5 class="card-title">Top Selling Movies<span>| As of today</span></h5>
-
-                  <table class="table table-borderless">
-                    <thead>
-                      <tr>
-                  
-                        <th scope="col">Movie</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Rented copies</th>
-                        <th scope="col">Revenue</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                    @foreach(var movieTransaction in ViewBag.movieCounts){
-                      <tr>
-                       
-                        <td>
-                          <a asp-controller="Movie" asp-action="Details" asp-route-id="@movieTransaction.Movie.Mid" class="text-primary fw-bold">
-                            @movieTransaction.Movie.Title
-                          </a>
-                        </td>
-                        <td>
-                          ZMW @movieTransaction.Movie.Price
-                        </td>
-                        <td class="fw-bold">
-                          @movieTransaction.TransactionCount
-                        </td>
-                        <td>
-                          <span class="badge bg-success">
-                            ZMW @movieTransaction.Revenue
-                          </span>
-                        </td>
-                      </tr>
-                    }
-                      
-                    </tbody>
-                  </table>
-
-                </div>
-
-              </div>
-            </div><!-- End Top Selling -->
 
           </div>
        

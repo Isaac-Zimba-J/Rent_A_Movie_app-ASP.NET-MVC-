@@ -11202,24 +11202,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Yolanta\\.nuget\\packages\\": {}
+    "C:\\Users\\26096\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\RAM_APP.csproj",
+      "projectUniqueName": "C:\\Users\\26096\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\RAM_APP.csproj",
       "projectName": "RAM_APP",
-      "projectPath": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\RAM_APP.csproj",
-      "packagesPath": "C:\\Users\\Yolanta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\obj\\",
+      "projectPath": "C:\\Users\\26096\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\RAM_APP.csproj",
+      "packagesPath": "C:\\Users\\26096\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\26096\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Yolanta\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\26096\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

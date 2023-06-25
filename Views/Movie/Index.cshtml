@@ -12,9 +12,11 @@
     
     <!--search button -->
     <div class="input-group mt-3">
-    <input id="searchbar"  type="search" class="form-control" placeholder="Search for movie by title or genre">
+    <input onkeypress="handleKeyPress(event)" id="searchbar"  type="text" class="form-control" placeholder="Search for movie by title or genre">
     <div class="input-group-append">
-        <a id="searchButton" onclick="search_movies()" class="btn btn-sm btn-primary"><i class="bi bi-search"></i>Search</a>
+        <a id="searchButton" onclick="search_movies()" class="btn btn-sm btn-primary">
+            <i class="bi bi-search"></i> Search
+        </a>
     </div>
     </div>
     <!-- end search button -->
@@ -78,6 +80,11 @@
 
 
 <script>
+    function handleKeyPress(event) {
+        if (event.key === 'Enter') {
+            search_movies();
+        }
+    }
 
     function search_movies() {
         var searchTerm = document.getElementById('searchbar').value;			
