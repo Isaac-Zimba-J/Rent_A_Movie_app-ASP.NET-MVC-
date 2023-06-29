@@ -80,11 +80,19 @@
 
     function handleKeyPress(event) {
         if (event.key === 'Enter') {
+<<<<<<< HEAD
             search();
         }
     }
 
     function search() {
+=======
+            search_movies();
+        }
+    }
+
+    function search_movies() {
+>>>>>>> ea07e5e5e48b70a0268c7fde15ec4fd46ab59c0a
         var searchTerm = document.getElementById('searchbar').value;			
         var url =  searchTerm;
         window.location.href = url;
