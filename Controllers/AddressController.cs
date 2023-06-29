@@ -28,6 +28,26 @@ namespace RAM_APP.Controllers
                           Problem("Entity set 'RentAmovieDbContext.Addresses'  is null.");
         }
 
+        //GET: Search
+        public async Task<IActionResult> Search(string id)
+        {
+            if(id == null|| _context.Addresses == null){
+                return RedirectToAction("Index", "Address");
+            }
+            else{
+            string searchTermLower = id.ToLower();
+            //Sort the movies in decending order of their release date, then the genre and lastly the title
+            var rentAmovieDbContext = _context.Addresses
+            .Where(a => a.City.ToLower().Contains(searchTermLower) ||
+                        a.Street.ToLower().Contains(searchTermLower) || 
+                        a.State.ToLower().Contains(searchTermLower) ||
+                        a.Zipcode.ToString().ToLower().Contains(searchTermLower))
+            .ToListAsync();
+            return View(await rentAmovieDbContext);
+            }
+
+        }
+
         // GET: Address/Details/5
         public async Task<IActionResult> Details(long? id)
         {

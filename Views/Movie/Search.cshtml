@@ -10,10 +10,12 @@
     <h4>Manage movies</h4>
 
     <div class="input-group mt-3">
-    <input id="searchbar"  type="search" class="form-control" placeholder="Search for movie by title or genre">
-    <div class="input-group-append">
-        <a id="searchButton" onclick="search_movies()" class="btn btn-sm btn-primary"><i class="bi bi-search"></i>Search</a>
-    </div>
+    <input id="searchbar"  handleKeyPress(event) type="text" class="form-control" placeholder="Search for movie by title or genre">
+    
+        <button id="searchButton" onclick="search()" class="btn btn-sm btn-primary">
+        <i class="bi bi-search"></i> Search
+        </button>
+    
     </div>
 
     <!-- Card with an image on left -->
@@ -76,7 +78,13 @@
 <!-- function to call the search action when the button has been clicked. -->
 <script>
 
-    function search_movies() {
+    function handleKeyPress(event) {
+        if (event.key === 'Enter') {
+            search();
+        }
+    }
+
+    function search() {
         var searchTerm = document.getElementById('searchbar').value;			
         var url =  searchTerm;
         window.location.href = url;

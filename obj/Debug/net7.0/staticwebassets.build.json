@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mFXQfn8z30v/ZzMFGs4p/1oq1mjSfj3cFROUlEkUhC8=",
+  "Hash": "U4ALTsJRO8p1otKAeHtfLb6WL8FOiOkJaOP9X2aT8HQ=",
   "Source": "RAM_APP",
   "BasePath": "_content/RAM_APP",
   "Mode": "Default",
@@ -1205,23 +1205,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\style.css"
-    },
-    {
-      "Identity": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\icons8-film-projector-32.png",
-      "SourceId": "RAM_APP",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\",
-      "BasePath": "_content/RAM_APP",
-      "RelativePath": "icons8-film-projector-32.png",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\icons8-film-projector-32.png"
     },
     {
       "Identity": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\images\\avater.jpeg",
@@ -2820,6 +2803,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\remixicon\\remixicon.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\logo.png",
+      "SourceId": "RAM_APP",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\",
+      "BasePath": "_content/RAM_APP",
+      "RelativePath": "logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\logo.png"
     }
   ]
 }

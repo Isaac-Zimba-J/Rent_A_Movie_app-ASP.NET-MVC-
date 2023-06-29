@@ -1,15 +1,14 @@
-@model IEnumerable<RAM_APP.Models.Address>
+@model IEnumerable<RAM_APP.Models.Genre>
 
 @{
-    ViewData["Title"] = "Addresses";
+    ViewData["Title"] = "Movie genres";
 }
 
-
-    
+       
 <main id="main" class="main">
 <!--search button -->
     <div class="input-group mt-3">
-    <input onkeypress="handleKeyPress(event)" id="searchbar"  type="text" class="form-control" placeholder="Search by street, zipcode, or city...">
+    <input onkeypress="handleKeyPress(event)" id="searchbar"  type="text" class="form-control" placeholder="Search for genre ...">
     
         <button id="searchButton" onclick="search()" class="btn btn-sm btn-primary">
             <i class="bi bi-search"></i> Search
@@ -24,59 +23,48 @@
               <div class="col-md-12">
                 <div class="card-body">
                     
-                    
-<h1>Addresses</h1>
+
+<h4>Movie genres</h4>
 <hr/>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.State)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.City)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Street)
+                @Html.DisplayNameFor(model => model.Name)
             </th>
             <th></th>
             <th></th>
-            <th><a  type="button" class="btn btn-sm btn-primary" asp-action="Create">Create New</a></th>
+            <th><a type="button" class="btn btn-primary" asp-action="Create">New</a></th>
+                
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.State)
+                <a asp-controller="Genre" asp-action="ByGenre" asp-route-id="@item.Gid">
+                    @Html.DisplayFor(modelItem => item.Name)
+                </a>
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.City)
+                <a  type="button" class="btn btn-sm btn-success " asp-action="Edit" asp-route-id="@item.Gid">Edit</a> 
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Street)
+                <a type="button" class="btn btn-sm btn-primary" asp-action="Details" asp-route-id="@item.Gid">Details</a> 
             </td>
             <td>
-                <a   type="button" class="btn btn-sm btn-success" asp-action="Edit" asp-route-id="@item.Zipcode">Edit</a> 
-          </td>
-          <td>
-            <a  type="button" class="btn btn-sm btn-primary" asp-action="Details" asp-route-id="@item.Zipcode">Details</a> 
-          </td>
-            <td>
-                <a   type="button" class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.Zipcode">Delete</a>
+                <a  type="button" class="btn btn-sm btn-danger " asp-action="Delete" asp-route-id="@item.Gid">Delete</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
 
-
                   </div>
               </div>
             </div>
           </div><!-- End Card with an image on left -->
 </main><!-- End #main -->
-
 
 <script>
     function handleKeyPress(event) {
@@ -87,10 +75,13 @@
 
     function search() {
         var searchTerm = document.getElementById('searchbar').value;			
-        var url = "Address/Search/" + searchTerm;
+        var url = searchTerm;
         window.location.href = url;
     }
 
 </script>
+ 
+
+
 
 

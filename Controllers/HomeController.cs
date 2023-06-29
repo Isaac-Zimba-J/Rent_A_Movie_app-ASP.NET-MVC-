@@ -41,6 +41,7 @@ public class HomeController : Controller
         var thisMonth = DateTime.Now.Month;
         var monthTransactions = transactions
                                 .Where(t => t.MonthRented == thisMonth)
+                                .Take(15)
                                 .ToList();
             
         ViewBag.MonthTransactions = monthTransactions;
@@ -57,6 +58,7 @@ public class HomeController : Controller
                             TransactionCount = g.Count(),
                             Revenue = (g.First().MovieNavigation.Amount*g.Count()).ToString("N2") })
         .OrderByDescending(mc => mc.TransactionCount)
+        .Take(5)
         .ToList();
 
         ViewBag.MovieCounts = movieCounts;

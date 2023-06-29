@@ -3,7 +3,13 @@
 @{
     ViewData["Title"] = "Adding actors to movie";
     var errorMessage = TempData["ErrorMessage"] as string;
+    var MovieTitle ="";
 }
+
+@foreach (var a in ViewBag.Stars){
+                        MovieTitle = a.Title;
+                    }
+
 @if (!string.IsNullOrEmpty(errorMessage))
 {
     <script>
@@ -20,7 +26,8 @@
             <div class="col-md-12">
                 <div class="card-body">
                     <center>
-                    <h2>Adding actors to movie</h2>
+                    
+                    <h2>Adding actors to @MovieTitle</h2>
                     <hr/>
                     <form asp-action="AddActor">
                         <div asp-validation-summary="ModelOnly" class="text-danger"></div>

@@ -37,10 +37,6 @@
       "PackagePath": "staticwebassets\\css\\style.css"
     },
     {
-      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\icons8-film-projector-32.png",
-      "PackagePath": "staticwebassets\\icons8-film-projector-32.png"
-    },
-    {
       "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\images\\Deadpool.jpeg",
       "PackagePath": "staticwebassets\\images\\Deadpool.jpeg"
     },
@@ -415,6 +411,10 @@
     {
       "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\lib\\remixicon\\remixicon.woff2",
       "PackagePath": "staticwebassets\\lib\\remixicon\\remixicon.woff2"
+    },
+    {
+      "Id": "C:\\Users\\Yolanta\\Downloads\\Rent_A_Movie_app-ASP.NET-MVC-\\wwwroot\\logo.png",
+      "PackagePath": "staticwebassets\\logo.png"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.RAM_APP.Microsoft.AspNetCore.StaticWebAssets.props",

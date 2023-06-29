@@ -33,6 +33,32 @@ namespace RAM_APP.Controllers
             return View(await rentAmovieDbContext);
         }
 
+        //GET: Search
+        public async Task<IActionResult> Search(string id)
+        {
+            if(id == null|| _context.Transactions == null){
+                return RedirectToAction("Index", "Transaction");
+            }
+            else{
+            string searchTermLower = id.ToLower();
+            //perform a filter search from the db
+            var rentAmovieDbContext = _context.Transactions
+                                        .Include(t => t.CustomerNavigation)
+                                        .Include(t => t.MovieNavigation)
+                                        .OrderByDescending(t => t.DateRented)
+                                        .ThenBy(t => t.CustomerNavigation.Surname)
+                                        .ThenBy(t => t.CustomerNavigation.FirstName)
+            .Where(t => t.CustomerNavigation.FirstName.ToLower().Contains(searchTermLower) || 
+                        t.CustomerNavigation.Surname.ToLower().Contains(searchTermLower) ||
+                        t.CustomerNavigation.MiddleName.ToLower().Contains(searchTermLower) ||
+                        t.MovieNavigation.Title.ToLower().Contains(searchTermLower) ||
+                        t.Tid.ToString().Contains(searchTermLower))
+            .ToListAsync();
+            return View(await rentAmovieDbContext);
+            }
+
+        }
+
         //GET: Transaction/ByCustomer/8
         public async Task<IActionResult> ByCustomer(long? id)
         {

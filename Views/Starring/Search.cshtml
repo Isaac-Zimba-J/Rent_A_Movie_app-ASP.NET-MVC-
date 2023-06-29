@@ -1,7 +1,7 @@
-@model IEnumerable<RAM_APP.Models.Address>
+@model IEnumerable<RAM_APP.Models.Starring>
 
 @{
-    ViewData["Title"] = "Addresses";
+    ViewData["Title"] = "Movie stars";
 }
 
 
@@ -9,7 +9,7 @@
 <main id="main" class="main">
 <!--search button -->
     <div class="input-group mt-3">
-    <input onkeypress="handleKeyPress(event)" id="searchbar"  type="text" class="form-control" placeholder="Search by street, zipcode, or city...">
+    <input onkeypress="handleKeyPress(event)" id="searchbar"  type="text" class="form-control" placeholder="Search by movie title or actor name...">
     
         <button id="searchButton" onclick="search()" class="btn btn-sm btn-primary">
             <i class="bi bi-search"></i> Search
@@ -24,51 +24,44 @@
               <div class="col-md-12">
                 <div class="card-body">
                     
-                    
-<h1>Addresses</h1>
-<hr/>
+                      
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.State)
+                Actor
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.City)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Street)
+                Movie
             </th>
             <th></th>
             <th></th>
-            <th><a  type="button" class="btn btn-sm btn-primary" asp-action="Create">Create New</a></th>
+            <th><a asp-action="Create">Create New</a></th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.State)
+                @Html.DisplayFor(modelItem => item.ActorNavigation.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.City)
+                @Html.DisplayFor(modelItem => item.MovieNavigation.Title)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Street)
+                <a  type="button" class="btn btn-success"asp-action="Edit" asp-route-id="@item.Sid">Edit</a> 
             </td>
             <td>
-                <a   type="button" class="btn btn-sm btn-success" asp-action="Edit" asp-route-id="@item.Zipcode">Edit</a> 
-          </td>
-          <td>
-            <a  type="button" class="btn btn-sm btn-primary" asp-action="Details" asp-route-id="@item.Zipcode">Details</a> 
-          </td>
+                <a  type="button" class="btn btn-primary" asp-action="Details" asp-route-id="@item.Sid">Details</a> 
+            </td>
             <td>
-                <a   type="button" class="btn btn-sm btn-danger" asp-action="Delete" asp-route-id="@item.Zipcode">Delete</a>
+                <a  type="button" class="btn btn-danger" asp-action="Delete" asp-route-id="@item.Sid">Delete</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+
 
 
                   </div>
@@ -87,10 +80,15 @@
 
     function search() {
         var searchTerm = document.getElementById('searchbar').value;			
-        var url = "Address/Search/" + searchTerm;
+        var url = searchTerm;
         window.location.href = url;
     }
 
 </script>
 
 
+
+
+    
+  
+    

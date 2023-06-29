@@ -28,6 +28,23 @@ namespace RAM_APP.Controllers
                           Problem("Entity set 'RentAmovieDbContext.Actors'  is null.");
         }
 
+        //GET: Search
+        public async Task<IActionResult> Search(string id)
+        {
+            if(id == null|| _context.Actors == null){
+                return RedirectToAction("Index", "Actor");
+            }
+            else{
+            string searchTermLower = id.ToLower();
+            //The search Algorithm
+            var rentAmovieDbContext = _context.Actors
+            .Where(a => a.Name.ToLower().Contains(searchTermLower))
+            .ToListAsync();
+            return View(await rentAmovieDbContext);
+            }
+
+        }
+
         // GET: Actor/Details/5
         public async Task<IActionResult> Details(long? id)
         {

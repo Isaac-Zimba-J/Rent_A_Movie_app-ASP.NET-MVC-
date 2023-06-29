@@ -14,7 +14,7 @@
         <button id="searchButton" onclick="search()" class="btn btn-sm btn-primary">
             <i class="bi bi-search"></i> Search
         </button>
-    
+   
     </div>
     <!-- end search button -->
 
@@ -87,7 +87,7 @@
 
     function search() {
         var searchTerm = document.getElementById('searchbar').value;			
-        var url = "Address/Search/" + searchTerm;
+        var url = searchTerm;
         window.location.href = url;
     }
 

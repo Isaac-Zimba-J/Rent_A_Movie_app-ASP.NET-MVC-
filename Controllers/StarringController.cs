@@ -122,6 +122,27 @@ namespace RAM_APP.Controllers
             return View(await rentAmovieDbContext.ToListAsync());
         }
 
+        //GET: Search
+        public async Task<IActionResult> Search(string id)
+        {
+            if(id == null|| _context.Starrings == null){
+                return RedirectToAction("Index", "Starring");
+            }
+            else{
+            string searchTermLower = id.ToLower();
+            //perform a filter search from the db
+            var rentAmovieDbContext = _context.Starrings
+            .OrderBy(s => s.ActorNavigation.Name)
+            .Include(s => s.ActorNavigation)
+            .Include(s => s.MovieNavigation)
+            .Where(s => s.ActorNavigation.Name.ToLower().Contains(searchTermLower) || 
+                        s.MovieNavigation.Title.ToLower().Contains(searchTermLower))
+            .ToListAsync();
+            return View(await rentAmovieDbContext);
+            }
+
+        }
+
         // GET: Starring/Details/5
         public async Task<IActionResult> Details(long? id)
         {

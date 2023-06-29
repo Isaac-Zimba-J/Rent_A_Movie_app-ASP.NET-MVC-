@@ -196,6 +196,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Yolanta/Downloads/Rent_A_Movie_app-ASP.NET-MVC-/Views/Actor/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0b3JcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Yolanta/Downloads/Rent_A_Movie_app-ASP.NET-MVC-/Views/Address/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkcmVzc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -214,6 +218,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Yolanta/Downloads/Rent_A_Movie_app-ASP.NET-MVC-/Views/Address/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkcmVzc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yolanta/Downloads/Rent_A_Movie_app-ASP.NET-MVC-/Views/Address/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRkcmVzc1xTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Yolanta/Downloads/Rent_A_Movie_app-ASP.NET-MVC-/Views/Customer/Create.cshtml]
@@ -262,6 +270,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Yolanta/Downloads/Rent_A_Movie_app-ASP.NET-MVC-/Views/Genre/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yolanta/Downloads/Rent_A_Movie_app-ASP.NET-MVC-/Views/Genre/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVcU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Yolanta/Downloads/Rent_A_Movie_app-ASP.NET-MVC-/Views/Home/Index.cshtml]
@@ -340,6 +352,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhcnJpbmdcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Yolanta/Downloads/Rent_A_Movie_app-ASP.NET-MVC-/Views/Starring/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhcnJpbmdcU2VhcmNoLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Yolanta/Downloads/Rent_A_Movie_app-ASP.NET-MVC-/Views/Transaction/ByCustomer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cQnlDdXN0b21lci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -362,6 +378,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Yolanta/Downloads/Rent_A_Movie_app-ASP.NET-MVC-/Views/Transaction/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Yolanta/Downloads/Rent_A_Movie_app-ASP.NET-MVC-/Views/Transaction/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNhY3Rpb25cU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Yolanta/Downloads/Rent_A_Movie_app-ASP.NET-MVC-/Views/_ViewImports.cshtml]

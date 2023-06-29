@@ -28,6 +28,25 @@ namespace RAM_APP.Controllers
                           Problem("Entity set 'RentAmovieDbContext.Genres'  is null.");
         }
 
+
+        //GET: Search
+        public async Task<IActionResult> Search(string id)
+        {
+            if(id == null|| _context.Genres == null){
+                return RedirectToAction("Index", "Genre");
+            }
+            else{
+            string searchTermLower = id.ToLower();
+            //Sort the movies in decending order of their release date, then the genre and lastly the title
+            var rentAmovieDbContext = _context.Genres
+            .OrderBy(g => g.Name)
+            .Where(g => g.Name.ToLower().Contains(searchTermLower))
+            .ToListAsync();
+            return View(await rentAmovieDbContext);
+            }
+
+        }
+
         // GET: Genre/Details/5
         public async Task<IActionResult> Details(long? id)
         {

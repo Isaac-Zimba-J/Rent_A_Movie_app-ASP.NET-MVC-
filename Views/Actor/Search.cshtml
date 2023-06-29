@@ -11,11 +11,11 @@
 <!--search button -->
     <div class="input-group mt-3">
     <input onkeypress="handleKeyPress(event)" id="searchbar"  type="text" class="form-control" placeholder="Search for actor by name">
-    
-        <button type="button" id="searchButton" onclick="search()" class="btn btn-sm btn-primary">
+    <div class="input-group-append">
+        <button id="searchButton" onclick="search()" class="btn btn-sm btn-primary">
             <i class="bi bi-search"></i> Search
         </button>
-    
+    </div>
     </div>
     <!-- end search button -->
 
@@ -73,7 +73,7 @@
 
     function search() {
         var searchTerm = document.getElementById('searchbar').value;			
-        var url = "Actor/Search/" + searchTerm;
+        var url = searchTerm;
         window.location.href = url;
     }
 

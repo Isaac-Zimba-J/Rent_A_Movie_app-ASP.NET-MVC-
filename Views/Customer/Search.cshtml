@@ -7,6 +7,15 @@
 
 
 <main id="main" class="main">
+<!--search button -->
+    <div class="input-group mt-3">
+    <input onkeypress="handleKeyPress(event)" id="searchbar"  type="text" class="form-control" placeholder="Search for customer by name or phone number">
+    
+        <a id="searchButton" onclick="search_customers()" class="btn btn-sm btn-primary"><i class="bi bi-search"></i>Search</a>
+    
+    </div>
+    <!-- end search button -->
+
 <!-- Card with an image on left -->
           <div class="card mb-3">
             <div class="row g-0">
@@ -80,6 +89,22 @@
             </div>
           </div><!-- End Card with an image on left -->
 </main><!-- End #main -->
+
+<script>
+
+    function handleKeyPress(event) {
+        if (event.key === 'Enter') {
+            search();
+        }
+    }
+
+    function search_customers() {
+        var searchTerm = document.getElementById('searchbar').value;			
+        var url = searchTerm;
+        window.location.href = url;
+    }
+
+</script>
 
 
 
