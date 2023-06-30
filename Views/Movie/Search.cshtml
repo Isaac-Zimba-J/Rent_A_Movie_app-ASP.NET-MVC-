@@ -10,18 +10,12 @@
     <h4>Manage movies</h4>
 
     <div class="input-group mt-3">
-    <input id="searchbar"  handleKeyPress(event) type="text" class="form-control" placeholder="Search for movie by title or genre">
-<<<<<<< HEAD
+    <input id="searchbar"  onkeypress="handleKeyPress(event)" type="text" class="form-control" placeholder="Search for movie by title or genre">
     
         <button id="searchButton" onclick="search()" class="btn btn-sm btn-primary">
         <i class="bi bi-search"></i> Search
         </button>
     
-=======
-    <div class="input-group-append">
-        <a id="searchButton" onclick="search_movies()" class="btn btn-sm btn-primary"><i class="bi bi-search"></i>Search</a>
-    </div>
->>>>>>> ea07e5e5e48b70a0268c7fde15ec4fd46ab59c0a
     </div>
 
     <!-- Card with an image on left -->
@@ -82,33 +76,22 @@
 
 
 <!-- function to call the search action when the button has been clicked. -->
-<script>
 
+
+<script>
     function handleKeyPress(event) {
         if (event.key === 'Enter') {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            search();
-        }
-    }
-
-    function search() {
-=======
-=======
->>>>>>> ea07e5e5e48b70a0268c7fde15ec4fd46ab59c0a
             search_movies();
         }
     }
 
     function search_movies() {
->>>>>>> ea07e5e5e48b70a0268c7fde15ec4fd46ab59c0a
         var searchTerm = document.getElementById('searchbar').value;			
-        var url =  searchTerm;
+        var url = searchTerm;
         window.location.href = url;
     }
 
 </script>
-
 
 
 
