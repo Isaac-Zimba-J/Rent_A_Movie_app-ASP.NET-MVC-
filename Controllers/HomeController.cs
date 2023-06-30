@@ -41,10 +41,9 @@ public class HomeController : Controller
         var thisMonth = DateTime.Now.Month;
         var monthTransactions = transactions
                                 .Where(t => t.MonthRented == thisMonth)
-                                .Take(15)
                                 .ToList();
             
-        ViewBag.MonthTransactions = monthTransactions;
+        ViewBag.MonthTransactions = monthTransactions.Take(15);
 
         //total amount of monthly transactions
         var monthlySales = monthTransactions.Sum(t => t.MovieNavigation.Amount);
