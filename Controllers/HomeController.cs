@@ -34,6 +34,7 @@ public class HomeController : Controller
                                 .Include(t => t.CustomerNavigation)
                                 .Include(t => t.MovieNavigation)
                                 .OrderByDescending(t => t.DateRented)
+                                .ThenByDescending(t => t.Tid)
                                 .ThenBy(t => t.CustomerNavigation.Surname)
                                 .ThenBy(t => t.CustomerNavigation.FirstName)
                                 .AsEnumerable();
@@ -68,6 +69,8 @@ public class HomeController : Controller
         //all customers
         var totalCustomers = _context.Customers.Count();
         ViewBag.AllCustomers =totalCustomers.ToString("N0");
+        //all Transaction
+        ViewBag.AllTransactions = _context.Transactions.Count().ToString("N0");
 
         return View();
     }

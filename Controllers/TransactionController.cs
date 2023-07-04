@@ -120,7 +120,10 @@ namespace RAM_APP.Controllers
         // GET: Transaction/Create
         public IActionResult Create()
         {
-            ViewData["Customer"] = new SelectList(_context.Customers, "Cid", "FirstName");
+            var Customer = _context.Customers
+                            .OrderBy(c => c.FirstName)
+                            .Select(c => new{CID = c.Cid, Name = (c.FirstName.ToString() + " " + c.Surname.ToString())});
+            ViewData["Customer"] = new SelectList(Customer, "CID", "Name");
             ViewData["Movie"] = new SelectList(_context.Movies, "Mid", "Title");
             return View();
         }
@@ -142,7 +145,11 @@ namespace RAM_APP.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["Customer"] = new SelectList(_context.Customers, "Cid", "FirstName", transaction.Customer);
+            var Customer = _context.Customers
+                            .OrderBy(c => c.Surname)
+                            .ThenBy(c => c.FirstName)
+                            .Select(c => new{CID = c.Cid, Name = (c.Surname.ToString() + " " + c.FirstName.ToString())});
+            ViewData["Customer"] = new SelectList(Customer, "CID", "Name", transaction.Customer);
             ViewData["Movie"] = new SelectList(_context.Movies, "Mid", "Title", transaction.Movie);
             return View(transaction);
         }
@@ -162,7 +169,11 @@ namespace RAM_APP.Controllers
             {
                 return NotFound();
             }
-            ViewData["Customer"] = new SelectList(_context.Customers, "Cid", "FirstName", transaction.Customer);
+            var Customer = _context.Customers
+                            .OrderBy(c => c.Surname)
+                            .ThenBy(c => c.FirstName)
+                            .Select(c => new{CID = c.Cid, Name = (c.Surname.ToString() + " " + c.FirstName.ToString())});
+            ViewData["Customer"] = new SelectList(Customer, "CID", "Name", transaction.Customer);
             ViewData["Movie"] = new SelectList(_context.Movies, "Mid", "Title", transaction.Movie);
             return View(transaction);
         }
